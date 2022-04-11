@@ -12,6 +12,7 @@
     "group:allNonMajor",
     "group:babelMonorepo",
     "group:nextjsMonorepo",
+    "group:aws-cdkMonorepo",
     "group:storybookMonorepo",
     "group:material-uiMonorepo",
     "workarounds:all"
