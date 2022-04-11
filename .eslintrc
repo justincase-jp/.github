@@ -1,3 +1,6 @@
 {
-  "extends": "plugin:@jict/json"
+  "extends": [
+    "plugin:@jict/prettier",
+    "plugin:@jict/json"
+  ]
 }

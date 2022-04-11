@@ -16,9 +16,7 @@
     "group:material-uiMonorepo",
     "workarounds:all"
   ],
-  "labels": [
-    "dependencies"
-  ],
+  "labels": ["dependencies"],
   "node": {
     "enabled": false
   },
@@ -26,6 +24,10 @@
   "platformCommit": true,
   "platformAutomerge": true,
   "packageRules": [
+    {
+      "packageNames": ["node"],
+      "enabled": false
+    },
     {
       "extends": "group:nodeJs",
       "enabled": false
@@ -39,7 +41,5 @@
       "matchPackageNames": ["@jict/eslint-plugin"]
     }
   ],
-  "ignoreDeps": [
-    "graphql"
-  ]
+  "ignoreDeps": ["graphql"]
 }
