@@ -5,8 +5,12 @@
     "schedule:weekly",
     ":prHourlyLimit4",
     "group:allNonMajor",
-    "group:linters",
-    "group:testNonMajor"
+    "group:test",
+    "group:testNonMajor",
+    "group:babelMonorepo",
+    "group:nextjsMonorepo",
+    "group:storybookMonorepo",
+    "group:material-uiMonorepo"
   ],
   "labels": [
     "dependencies"
