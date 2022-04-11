@@ -6,7 +6,6 @@
     ":prHourlyLimit4",
     "group:allNonMajor",
     "group:test",
-    "group:testNonMajor",
     "group:babelMonorepo",
     "group:nextjsMonorepo",
     "group:storybookMonorepo",
@@ -30,8 +29,12 @@
       "enabled": false
     },
     {
+      "extends": "group:test",
+      "matchPackageNames": ["vitest"]
+    },
+    {
       "extends": "group:linters",
-      "matchPackagePatterns": ["@jict/eslint-plugin"]
+      "matchPackageNames": ["@jict/eslint-plugin"]
     }
   ],
   "ignoreDeps": [
