@@ -1,5 +1,5 @@
 # renovate-config
-JustInCase's Renovate configurations
+JustInCase's Renovate configuration
 
 ## Usage
 
