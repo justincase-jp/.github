@@ -1,0 +1,18 @@
+{
+  "name": "renovate-config",
+  "private": true,
+  "description": "justInCase's Renovate configurations",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justincase-jp/renovate-config.git"
+  },
+  "author": "justInCaseTechnologies Inc. <developers@justincase.jp>",
+  "bugs": {
+    "url": "https://github.com/justincase-jp/renovate-config/issues"
+  },
+  "homepage": "https://github.com/justincase-jp/renovate-config#readme",
+  "devDependencies": {
+    "@jict/eslint-plugin": "^0.0.18",
+    "eslint": "^8.13.0"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":prHourlyLimit4",
+    "group:allNonMajor",
+    "group:linters",
+    "group:testNonMajor"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "node": {
+    "enabled": false
+  },
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "rangeStrategy": "bump",
+  "platformCommit": true,
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "extends": "group:nodeJs",
+      "enabled": false
+    },
+    {
+      "extends": "group:linters",
+      "matchPackagePatterns": ["@jict/eslint-plugin"]
+    }
+  ],
+  "ignoreDeps": [
+    "graphql"
+  ]
+}
