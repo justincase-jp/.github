@@ -8,6 +8,6 @@ JustInCase's Renovate configurations
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>justincase-jp/renovate-config"]
+  "extends": ["github>justincase-jp/renovate-config"]
 }
 ```
