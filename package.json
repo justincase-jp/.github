@@ -8,7 +8,8 @@
     "url": "git+https://github.com/justincase-jp/renovate-config.git"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "bugs": {
     "url": "https://github.com/justincase-jp/renovate-config/issues"
@@ -18,7 +19,18 @@
     "@jict/eslint-plugin": "^0.0.18",
     "@jict/prettier-config": "^0.0.2",
     "eslint": "^8.13.0",
-    "prettier": "^2.6.2"
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
+    "simple-git-hooks": "^2.7.0",
+    "typescript": "^4.6.3"
   },
-  "prettier": "@jict/prettier-config"
+  "prettier": "@jict/prettier-config",
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "**/*.json": [
+      "eslint --ext .json"
+    ]
+  }
 }
