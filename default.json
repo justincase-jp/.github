@@ -11,7 +11,6 @@
     ":maintainLockFilesWeekly",
     "group:allNonMajor",
     "group:babelMonorepo",
-    "group:reactMonorepo",
     "group:nextjsMonorepo",
     "group:aws-cdkMonorepo",
     "group:material-uiMonorepo",
@@ -36,6 +35,10 @@
     {
       "extends": "group:storybookMonorepo",
       "matchPackagePatterns": ["^@storybook/"]
+    },
+    {
+      "extends": "group:reactMonorepo",
+      "matchPackagePatterns": ["react"]
     },
     {
       "extends": "group:test",
