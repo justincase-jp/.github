@@ -25,28 +25,32 @@
   "platformAutomerge": true,
   "packageRules": [
     {
-      "packageNames": ["node"],
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["node"],
+      "matchPackagePatterns": ["/node$"],
+      "excludePackageNames": ["calico/node", "kindest/node"],
+      "commitMessageTopic": "Node.js",
       "enabled": false
     },
     {
-      "extends": "group:nodeJs",
-      "enabled": false
+      "matchPackagePatterns": ["^@storybook/", "^storybook-"],
+      "matchUpdateTypes": ["digest", "patch", "minor", "major"],
+      "groupName": "storybook"
     },
     {
-      "extends": "group:storybookMonorepo",
-      "matchPackagePatterns": ["^@storybook/"]
+      "extends": "monorepo:react",
+      "matchPackagePatterns": ["react"],
+      "groupName": "react"
     },
     {
-      "extends": "group:reactMonorepo",
-      "matchPackagePatterns": ["react"]
+      "extends": "packages:test",
+      "matchPackageNames": ["vitest"],
+      "groupName": "test packages"
     },
     {
-      "extends": "group:test",
-      "matchPackageNames": ["vitest"]
-    },
-    {
-      "extends": "group:linters",
-      "matchPackageNames": ["@jict/eslint-plugin"]
+      "extends": "packages:linters",
+      "matchPackageNames": ["@jict/eslint-plugin"],
+      "groupName": "linters"
     }
   ],
   "ignoreDeps": ["graphql"]
