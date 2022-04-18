@@ -3,6 +3,7 @@
   "extends": [
     "schedule:weekly",
     ":dependencyDashboard",
+    ":semanticCommits",
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
     ":autodetectPinVersions",
