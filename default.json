@@ -29,6 +29,10 @@
       "enabled": false
     },
     {
+      "matchDepTypes": ["peerDependencies"],
+      "rangeStrategy": "widen"
+    },
+    {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
       "matchUpdateTypes": ["digest", "patch", "minor", "major"],
       "groupName": "storybook"
