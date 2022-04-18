@@ -34,13 +34,17 @@
       "rangeStrategy": "widen"
     },
     {
+      "matchPackagePrefixes": ["react", "@types/react"],
+      "groupName": "react"
+    },
+    {
+      "matchPackagePatterns": ["^@aws-sdk/", "^aws-cdk-"],
+      "groupName": "aws"
+    },
+    {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
       "matchUpdateTypes": ["digest", "patch", "minor", "major"],
       "groupName": "storybook"
-    },
-    {
-      "matchPackagePrefixes": ["react", "@types/react"],
-      "groupName": "react"
     },
     {
       "extends": "packages:test",
