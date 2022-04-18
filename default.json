@@ -39,8 +39,7 @@
       "groupName": "storybook"
     },
     {
-      "extends": "monorepo:react",
-      "matchPackagePatterns": ["react"],
+      "matchPackagePrefixes": ["react", "@types/react"],
       "groupName": "react"
     },
     {
