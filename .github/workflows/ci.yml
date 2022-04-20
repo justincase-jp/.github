@@ -7,7 +7,7 @@ on:
 jobs:
   lint:
     name: Lint
-    uses: ../../workflows/pnpm-eslint.yml
+    uses: ../../workflows/pnpm-eslint.yml@main
 
   validate:
     runs-on: ubuntu-latest
@@ -22,7 +22,7 @@ jobs:
       RENOVATE_CONFIG_FILE: ${{ matrix.file }}.json
 
     steps:
-      - uses: actions/checkout@v3.0.1
+      - uses: actions/checkout@v3
 
       - name: Validate ${{ matrix.file }}
         run: npx -p renovate renovate-config-validator
