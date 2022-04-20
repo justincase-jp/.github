@@ -1,6 +1,7 @@
 {
-  "name": "renovate-config",
+  "name": "dot-github",
   "private": true,
+  "packageManager": "pnpm@6.32.8",
   "description": "justInCase's Renovate configurations",
   "author": "justInCaseTechnologies Inc. <developers@justincase.jp>",
   "repository": {
@@ -9,7 +10,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator"
   },
   "bugs": {
     "url": "https://github.com/justincase-jp/renovate-config/issues"
@@ -21,6 +23,7 @@
     "eslint": "^8.13.0",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
+    "renovate": "^32.26.3",
     "simple-git-hooks": "^2.7.0",
     "typescript": "^4.6.3"
   },

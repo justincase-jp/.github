@@ -1,0 +1,38 @@
+name: Lint
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        type: 'number'
+        description: 'The node version to use for the linting'
+        default: 16
+        required: false
+      command:
+        type: 'string'
+        description: 'The lint command to use'
+        default: 'pnpm lint'
+        required: false
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: 'Lint'
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set node version to 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: pnpm
+
+      - name: Install deps
+        run: pnpm install
+
+      - name: Lint
+        run: ${{ inputs.command }}
