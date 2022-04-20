@@ -6,8 +6,26 @@ on:
 
 jobs:
   lint:
+    runs-on: ubuntu-latest
     name: Lint
-    uses: ./workflows/pnpm-eslint.yml
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set node version to 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+
+      - name: Install deps
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm lint
 
   validate:
     runs-on: ubuntu-latest
