@@ -7,7 +7,7 @@ on:
 jobs:
   lint:
     name: Lint
-    uses: justincase-jp/.github/workflows/pnpm-eslint.yml@main
+    uses: ./workflows/pnpm-eslint.yml
 
   validate:
     runs-on: ubuntu-latest
