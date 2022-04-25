@@ -37,7 +37,7 @@
       "groupName": "react"
     },
     {
-      "matchPackagePatterns": ["^@aws-sdk/", "^aws-cdk-"],
+      "matchPackagePatterns": ["^@aws-sdk/", "^aws-cdk"],
       "groupName": "aws"
     },
     {
