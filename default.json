@@ -38,6 +38,7 @@
     },
     {
       "matchPackagePatterns": ["^@aws-sdk/", "^aws-cdk"],
+      "matchPackageNames": ["constructs"],
       "groupName": "aws"
     },
     {
