@@ -43,6 +43,10 @@
       "groupName": "aws"
     },
     {
+      "matchPackagePatterns": ["^@nestjs/", "^nestjs"],
+      "groupName": "nestjs"
+    },
+    {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
       "groupName": "storybook"
     },
