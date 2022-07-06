@@ -61,18 +61,18 @@
       "automerge": true
     },
     {
-      "extends": "group:babelMonorepo",
-      "groupName": "babel Monorepo",
+      "extends": "monorepo:babel",
+      "groupName": "babel monorepo",
       "automerge": true
     },
     {
-      "extends": "group:nextjsMonorepo",
-      "groupName": "Next.js Monorepo",
+      "extends": "monorepo:nextjs",
+      "groupName": "nextjs monorepo",
       "automerge": true
     },
     {
-      "extends": "group:material-uiMonorepo",
-      "groupName": "material-ui Monorepo",
+      "extends": "monorepo:material-ui",
+      "groupName": "material-ui monorepo",
       "automerge": true
     }
   ],
