@@ -12,9 +12,6 @@
     ":prConcurrentLimit20",
     ":maintainLockFilesWeekly",
     "group:allNonMajor",
-    "group:babelMonorepo",
-    "group:nextjsMonorepo",
-    "group:material-uiMonorepo",
     "workarounds:all"
   ],
   "labels": ["dependencies"],
@@ -61,6 +58,21 @@
       "extends": "packages:linters",
       "matchPackageNames": ["@jict/eslint-plugin"],
       "groupName": "linters",
+      "automerge": true
+    },
+    {
+      "extends": "group:babelMonorepo",
+      "groupName": "babel Monorepo",
+      "automerge": true
+    },
+    {
+      "extends": "group:nextjsMonorepo",
+      "groupName": "Next.js Monorepo",
+      "automerge": true
+    },
+    {
+      "extends": "group:material-uiMonorepo",
+      "groupName": "material-ui Monorepo",
       "automerge": true
     }
   ],
