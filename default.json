@@ -48,17 +48,20 @@
     },
     {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
-      "groupName": "storybook"
+      "groupName": "storybook",
+      "automerge": true
     },
     {
       "extends": "packages:test",
       "matchPackageNames": ["vitest"],
-      "groupName": "test packages"
+      "groupName": "test packages",
+      "automerge": true
     },
     {
       "extends": "packages:linters",
       "matchPackageNames": ["@jict/eslint-plugin"],
-      "groupName": "linters"
+      "groupName": "linters",
+      "automerge": true
     }
   ],
   "ignoreDeps": ["graphql"]
