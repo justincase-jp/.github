@@ -12,9 +12,6 @@
     ":prConcurrentLimit20",
     ":maintainLockFilesWeekly",
     "group:allNonMajor",
-    "group:babelMonorepo",
-    "group:nextjsMonorepo",
-    "group:material-uiMonorepo",
     "workarounds:all"
   ],
   "labels": ["dependencies"],
@@ -48,17 +45,35 @@
     },
     {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
-      "groupName": "storybook"
+      "groupName": "storybook",
+      "automerge": true
     },
     {
       "extends": "packages:test",
       "matchPackageNames": ["vitest"],
-      "groupName": "test packages"
+      "groupName": "test packages",
+      "automerge": true
     },
     {
       "extends": "packages:linters",
       "matchPackageNames": ["@jict/eslint-plugin"],
-      "groupName": "linters"
+      "groupName": "linters",
+      "automerge": true
+    },
+    {
+      "extends": "monorepo:babel",
+      "groupName": "babel monorepo",
+      "automerge": true
+    },
+    {
+      "extends": "monorepo:nextjs",
+      "groupName": "nextjs monorepo",
+      "automerge": true
+    },
+    {
+      "extends": "monorepo:material-ui",
+      "groupName": "material-ui monorepo",
+      "automerge": true
     }
   ],
   "ignoreDeps": ["graphql"]
