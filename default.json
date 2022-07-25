@@ -10,7 +10,6 @@
     ":autodetectPinVersions",
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
-    ":maintainLockFilesWeekly",
     "group:allNonMajor",
     "workarounds:all"
   ],
@@ -21,6 +20,11 @@
   "rangeStrategy": "bump",
   "platformCommit": true,
   "platformAutomerge": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["before 3:00 am on the 1st and 15th day of the month"]
+  },
   "packageRules": [
     {
       "matchPackageNames": ["node"],
