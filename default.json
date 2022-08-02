@@ -48,6 +48,10 @@
       "groupName": "nestjs"
     },
     {
+      "matchPackagePatterns": ["pino"],
+      "groupName": "pino"
+    },
+    {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
       "groupName": "storybook",
       "automerge": true
