@@ -52,6 +52,10 @@
       "groupName": "pino"
     },
     {
+      "matchPackagePatterns": ["rollup", "^@rollup/", "^rollup-"],
+      "groupName": "rollup"
+    },
+    {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
       "groupName": "storybook",
       "automerge": true
