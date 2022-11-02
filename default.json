@@ -62,7 +62,7 @@
     },
     {
       "extends": "packages:test",
-      "matchPackageNames": ["vitest"],
+      "matchPackagePatterns": ["vitest", "^@vitest/"],
       "groupName": "test packages",
       "automerge": true
     },
