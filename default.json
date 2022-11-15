@@ -20,6 +20,9 @@
   "rangeStrategy": "bump",
   "platformCommit": true,
   "platformAutomerge": true,
+  "major": {
+    "automerge": false
+  },
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
