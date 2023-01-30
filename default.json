@@ -38,6 +38,10 @@
       "rangeStrategy": "widen"
     },
     {
+      "matchPackageNames": ["pnpm"],
+      "groupName": "pnpm"
+    },
+    {
       "matchPackagePrefixes": ["react", "@types/react"],
       "groupName": "react"
     },
