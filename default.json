@@ -75,7 +75,7 @@
     },
     {
       "extends": "packages:linters",
-      "matchPackageNames": ["@jict/eslint-plugin"],
+      "matchPackageNames": ["@jict/eslint-plugin", "@jict/stylelint-plugin"],
       "groupName": "linters",
       "automerge": true
     },
