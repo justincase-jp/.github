@@ -64,6 +64,7 @@
     },
     {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
+      "matchPackageNames": ["storybook"],
       "groupName": "storybook",
       "automerge": true
     },
