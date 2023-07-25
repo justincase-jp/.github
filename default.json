@@ -11,7 +11,8 @@
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
     "group:allNonMajor",
-    "workarounds:all"
+    "workarounds:all",
+    "npm:unpublishSafe"
   ],
   "labels": ["dependencies"],
   "node": {
