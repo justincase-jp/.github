@@ -21,6 +21,7 @@
   "rangeStrategy": "bump",
   "platformCommit": true,
   "platformAutomerge": true,
+  "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
   "major": {
     "automerge": false
   },
@@ -71,7 +72,13 @@
     },
     {
       "extends": "packages:test",
-      "matchPackagePatterns": ["vitest", "^@vitest/"],
+      "matchPackagePatterns": [
+        "msw",
+        "vitest",
+        "^@vitest/",
+        "playwright",
+        "^@playwright/"
+      ],
       "groupName": "test packages",
       "automerge": true
     },
@@ -92,7 +99,11 @@
       "automerge": true
     },
     {
-      "extends": "monorepo:material-ui",
+      "matchSourceUrls": [
+        "https://github.com/mui-org/material-ui",
+        "https://github.com/mui/material-ui",
+        "https://github.com/mui/mui-x"
+      ],
       "groupName": "material-ui monorepo",
       "automerge": true
     }
