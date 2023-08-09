@@ -23,7 +23,7 @@
     "eslint": "^8.46.0",
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
-    "renovate": "^36.25.3",
+    "renovate": "^36.33.5",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.1.6"
   },
