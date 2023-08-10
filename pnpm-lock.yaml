@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@jict/eslint-plugin':
-    specifier: ^1.0.1
-    version: 1.0.1(eslint@8.46.0)(prettier@3.0.1)(typescript@5.1.6)
+    specifier: ^1.0.2
+    version: 1.0.2(eslint@8.46.0)(prettier@3.0.1)(typescript@5.1.6)
   '@jict/prettier-config':
     specifier: ^0.0.3
     version: 0.0.3
@@ -18,7 +18,7 @@ devDependencies:
     specifier: ^13.2.3
     version: 13.2.3
   prettier:
-    specifier: ^3.0.0
+    specifier: ^3.0.1
     version: 3.0.1
   renovate:
     specifier: ^36.33.5
@@ -1528,8 +1528,8 @@ packages:
       wrap-ansi-cjs: /wrap-ansi@7.0.0
     dev: true
 
-  /@jict/eslint-plugin@1.0.1(eslint@8.46.0)(prettier@3.0.1)(typescript@5.1.6):
-    resolution: {integrity: sha512-6fUyCyzRmKclZlrL72/r9+3CrD26cPLZPD3PfZOo85NErURkNwW2+81aoAnkahrnWdM50jatsOZ6X0YtMS/vMA==}
+  /@jict/eslint-plugin@1.0.2(eslint@8.46.0)(prettier@3.0.1)(typescript@5.1.6):
+    resolution: {integrity: sha512-BdPPB5fxjl75i8ngGBo1umbYRwo3hi3DWCIU1xPTrawABMCbdTPIJGAP62ItyfNMjSaHoZkr0AtvvabrbAHmIA==}
     peerDependencies:
       eslint: ^8.13.0
       prettier: ^3.0.0
