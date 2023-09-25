@@ -1,6 +1,6 @@
 // NOTE: 深夜の通知を避けたいなどの理由で朝にPRを作る設定（数時間早い時差のある方が参画している場合は作業時間と競合しないか配慮してください）
 // 使い方
-// "extends": ["github>justincase-jp/.github/morning.json5"],
+// "extends": ["github>justincase-jp/.github:morning.json5"],
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: ['github>justincase-jp/.github'],
