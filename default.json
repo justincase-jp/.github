@@ -11,6 +11,7 @@
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
     "group:allNonMajor",
+    "group:definitelyTyped",
     "workarounds:all",
     "npm:unpublishSafe"
   ],
