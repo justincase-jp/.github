@@ -20,7 +20,7 @@
   "devDependencies": {
     "@jict/eslint-plugin": "^1.1.0",
     "@jict/prettier-config": "^0.0.3",
-    "eslint": "^8.48.0",
+    "eslint": "^8.50.0",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "renovate": "^36.78.7",
