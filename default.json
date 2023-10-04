@@ -49,7 +49,7 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "dependencies (non-major)"
-    }
+    },
     {
       "matchPackageNames": ["pnpm"],
       "groupName": "pnpm"
