@@ -41,6 +41,16 @@
       "rangeStrategy": "widen"
     },
     {
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "devDependencies",
+      "rangeStrategy": "update-lockfile"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "dependencies (non-major)"
+    }
+    {
       "matchPackageNames": ["pnpm"],
       "groupName": "pnpm"
     },
