@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>justincase-jp/.github"],
-  "schedule": ["before 3am on Friday"],
   "automerge": true,
   "major": {
     "automerge": false
