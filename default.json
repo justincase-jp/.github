@@ -16,9 +16,6 @@
     "npm:unpublishSafe"
   ],
   "labels": ["dependencies"],
-  "node": {
-    "enabled": false
-  },
   "rangeStrategy": "bump",
   "platformCommit": true,
   "platformAutomerge": true,
@@ -32,10 +29,6 @@
     "schedule": ["before 3:00 am on the 15th day of the month"]
   },
   "packageRules": [
-    {
-      "matchPackageNames": ["node"],
-      "enabled": false
-    },
     {
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "widen"
