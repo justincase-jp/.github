@@ -7,7 +7,6 @@
     ":semanticCommits",
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
-    ":autodetectPinVersions",
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
     "group:allNonMajor",
@@ -65,7 +64,7 @@
       "automerge": true
     },
     {
-      "extends": "packages:test",
+      "extends": ["packages:test"],
       "matchPackagePatterns": [
         "msw",
         "vitest",
@@ -77,18 +76,18 @@
       "automerge": true
     },
     {
-      "extends": "packages:linters",
+      "extends": ["packages:linters"],
       "matchPackageNames": ["@jict/eslint-plugin", "@jict/stylelint-plugin"],
       "groupName": "linters",
       "automerge": true
     },
     {
-      "extends": "monorepo:babel",
+      "extends": ["monorepo:babel"],
       "groupName": "babel monorepo",
       "automerge": true
     },
     {
-      "extends": "monorepo:nextjs",
+      "extends": ["monorepo:nextjs"],
       "groupName": "nextjs monorepo",
       "automerge": true
     },
