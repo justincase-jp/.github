@@ -37,8 +37,6 @@ jobs:
           - default.json
           - renovate-config.json
           - morning.json5
-    env:
-      RENOVATE_CONFIG_FILE: ${{ matrix.file }}
 
     steps:
       - name: Checkout repo
@@ -57,4 +55,4 @@ jobs:
         run: pnpm install
 
       - name: Validate ${{ matrix.file }}
-        run: pnpm test
+        run: pnpm renovate-config-validator ${{ matrix.file }}
