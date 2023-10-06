@@ -34,10 +34,11 @@ jobs:
     strategy:
       matrix:
         file:
-          - default
-          - renovate-config
+          - default.json
+          - renovate-config.json
+          - morning.json5
     env:
-      RENOVATE_CONFIG_FILE: ${{ matrix.file }}.json
+      RENOVATE_CONFIG_FILE: ${{ matrix.file }}
 
     steps:
       - uses: actions/checkout@v4
