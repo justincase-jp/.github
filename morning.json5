@@ -5,12 +5,10 @@
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: ['github>justincase-jp/.github'],
   timezone: 'Asia/Tokyo',
-  schedule: [
-    'after 9:00 am and before 11:00 am on the 1st and 15th day of the month',
-  ],
+  schedule: ['after 9:00 am and before 11:00 am on the 1st day of the month'],
   lockFileMaintenance: {
     schedule: [
-      'after 9:00 am and before 11:00 am on the 1st and 15th day of the month',
+      'after 9:00 am and before 11:00 am on the 15th day of the month',
     ],
   },
 }
