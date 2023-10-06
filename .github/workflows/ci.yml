@@ -12,8 +12,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Enable corepack
+        run: corepack enable
 
       - name: Setup node
         uses: actions/setup-node@v3
@@ -37,11 +37,22 @@ jobs:
           - default.json
           - renovate-config.json
           - morning.json5
-    env:
-      RENOVATE_CONFIG_FILE: ${{ matrix.file }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: pnpm
+
+      - name: Install deps
+        run: pnpm install
 
       - name: Validate ${{ matrix.file }}
-        run: npx -p renovate renovate-config-validator
+        run: pnpm renovate-config-validator ${{ matrix.file }}
