@@ -1,7 +1,7 @@
 {
   "name": "dot-github",
   "private": true,
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.13.1",
   "description": "justInCase's Renovate configurations",
   "author": "justInCaseTechnologies Inc. <developers@justincase.jp>",
   "repository": {
