@@ -52,6 +52,10 @@
       "groupName": "react"
     },
     {
+      "matchPackagePatterns": ["redux"],
+      "groupName": "redux"
+    },
+    {
       "matchPackagePatterns": ["^@aws-sdk/", "^aws-cdk"],
       "matchPackageNames": ["constructs"],
       "groupName": "aws"
