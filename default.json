@@ -35,8 +35,7 @@
     },
     {
       "matchDepTypes": ["devDependencies"],
-      "groupName": "devDependencies",
-      "rangeStrategy": "update-lockfile"
+      "groupName": "devDependencies"
     },
     {
       "matchDepTypes": ["dependencies"],
