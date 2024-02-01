@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/justincase-jp/renovate-config#readme",
   "devDependencies": {
-    "@jict/eslint-plugin": "^1.1.0",
+    "@jict/eslint-plugin": "^1.1.6",
     "@jict/prettier-config": "^0.0.3",
-    "eslint": "^8.50.0",
+    "eslint": "^8.56.0",
     "lint-staged": "^15.0.0",
-    "prettier": "^3.0.3",
+    "prettier": "^3.2.4",
     "renovate": "^37.0.0",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2"
