@@ -47,7 +47,12 @@
       "groupName": "pnpm"
     },
     {
-      "matchPackagePrefixes": ["react", "@types/react"],
+      "matchPackageNames": [
+        "react",
+        "@types/react",
+        "react-dom",
+        "@types/react-dom"
+      ],
       "groupName": "react"
     },
     {
