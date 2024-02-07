@@ -31,7 +31,8 @@
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
-      "groupName": "github-actions"
+      "matchPackagePatterns": ["^actions/"],
+      "groupName": "github-actions official"
     },
     {
       "matchDepTypes": ["peerDependencies"],
