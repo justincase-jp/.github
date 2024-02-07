@@ -30,6 +30,11 @@
   },
   "packageRules": [
     {
+      "matchManagers": ["github-actions"],
+      "matchPackagePatterns": ["^actions/"],
+      "groupName": "github-actions official"
+    },
+    {
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "widen"
     },
@@ -47,7 +52,12 @@
       "groupName": "pnpm"
     },
     {
-      "matchPackagePrefixes": ["react", "@types/react"],
+      "matchPackageNames": [
+        "react",
+        "@types/react",
+        "react-dom",
+        "@types/react-dom"
+      ],
       "groupName": "react"
     },
     {
