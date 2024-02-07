@@ -30,8 +30,8 @@
   },
   "packageRules": [
     {
-      "matchManagers": ["ci"],
-      "groupName": "ci"
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions"
     },
     {
       "matchDepTypes": ["peerDependencies"],
