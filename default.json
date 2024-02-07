@@ -8,7 +8,6 @@
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
     ":prHourlyLimitNone",
-    ":prConcurrentLimit20",
     "group:allNonMajor",
     "group:definitelyTyped",
     "workarounds:all",
@@ -20,6 +19,7 @@
   "platformCommit": true,
   "platformAutomerge": true,
   "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
+  "prConcurrentLimit": 50,
   "major": {
     "automerge": false
   },
