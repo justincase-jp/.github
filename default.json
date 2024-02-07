@@ -30,6 +30,10 @@
   },
   "packageRules": [
     {
+      "matchManagers": ["ci"],
+      "groupName": "ci"
+    },
+    {
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "widen"
     },
