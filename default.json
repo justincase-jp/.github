@@ -9,9 +9,8 @@
     ":ignoreModulesAndTests",
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
-    "group:allNonMajor",
-    "group:definitelyTyped",
     "workarounds:all",
+    "replacements:all",
     "npm:unpublishSafe"
   ],
   "configMigration": true,
@@ -21,20 +20,12 @@
   "platformCommit": true,
   "platformAutomerge": true,
   "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
-  "major": {
-    "automerge": false
-  },
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
     "schedule": ["before 3:00 am on the 15th day of the month"]
   },
   "packageRules": [
-    {
-      "matchManagers": ["github-actions"],
-      "matchPackagePatterns": ["^actions/"],
-      "groupName": "github-actions official"
-    },
     {
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "widen"
@@ -45,20 +36,17 @@
     },
     {
       "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "dependencies (non-major)"
+      "matchUpdateTypes": ["minor"],
+      "groupName": "dependencies (minor)"
     },
     {
-      "matchPackageNames": ["pnpm"],
-      "groupName": "pnpm"
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch"],
+      "groupName": "dependencies (patch)",
+      "automerge": true
     },
     {
-      "matchPackageNames": [
-        "react",
-        "@types/react",
-        "react-dom",
-        "@types/react-dom"
-      ],
+      "matchPackageNames": ["react", "react-dom"],
       "groupName": "react"
     },
     {
@@ -80,7 +68,8 @@
     },
     {
       "matchPackagePatterns": ["rollup", "^@rollup/", "^rollup-"],
-      "groupName": "rollup"
+      "groupName": "rollup",
+      "automerge": true
     },
     {
       "matchPackagePatterns": ["^@storybook/", "^storybook-"],
@@ -123,6 +112,22 @@
         "https://github.com/mui/mui-x"
       ],
       "groupName": "material-ui monorepo",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["pnpm"],
+      "groupName": "pnpm",
+      "automerge": true
+    },
+    {
+      "groupName": "definitelyTyped",
+      "matchPackagePrefixes": ["@types/"],
+      "automerge": true
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchPackagePatterns": ["^actions/"],
+      "groupName": "github-actions official",
       "automerge": true
     }
   ],
