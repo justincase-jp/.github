@@ -9,20 +9,20 @@ devDependencies:
     specifier: ^1.1.8
     version: 1.1.8(eslint@8.56.0)(prettier@3.2.5)(typescript@5.3.3)
   '@jict/prettier-config':
-    specifier: ^0.0.3
-    version: 0.0.3
+    specifier: ^0.0.4
+    version: 0.0.4
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
   lint-staged:
-    specifier: ^15.2.1
+    specifier: ^15.2.2
     version: 15.2.2
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
   renovate:
-    specifier: ^37.170.0
-    version: 37.190.0(typanion@3.14.0)
+    specifier: ^37.210.0
+    version: 37.214.0(typanion@3.14.0)
   simple-git-hooks:
     specifier: ^2.9.0
     version: 2.9.0
@@ -1641,8 +1641,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@jict/prettier-config@0.0.3:
-    resolution: {integrity: sha512-1GJBvo5mzZeYdVL12ClCKjaQPbpfYwxjo4XP8Vnw1wwGhhYEL9XYFsmcFsUwf0xws8qB/EEQz8hor2GMmfP3vA==}
+  /@jict/prettier-config@0.0.4:
+    resolution: {integrity: sha512-V2UDgiNYC8uu8XqSjK7iOl9z5z93siae4rLqUPMs1zk3Zpa/j0CL4FecBJn7Es6azQ6e7FDpdcH4fhRvHUQyIA==}
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -3466,8 +3466,8 @@ packages:
     resolution: {integrity: sha512-NzUnlZexiaH/46WDhANlyR2bXRopNg4F/zuSA3OpZnllCUgRaOF2znDioDWrmbNVsuZk6l9pMquQB38cfBZwkQ==}
     dev: true
 
-  /better-sqlite3@9.4.0:
-    resolution: {integrity: sha512-5kynxekMxSjCMiFyUBLHggFcJkCmiZi6fUkiGz/B5GZOvdRWQJD0klqCx5/Y+bm2AKP7I/DHbSFx26AxjruWNg==}
+  /better-sqlite3@9.4.1:
+    resolution: {integrity: sha512-QpqiQeMI4WkE+dQ68zTMX5OzlPGc7lXIDP1iKUt4Omt9PdaVgzKYxHIJRIzt1E+RUBQoFmkip/IbvzyrxehAIg==}
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
@@ -7206,8 +7206,8 @@ packages:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
     dev: true
 
-  /renovate@37.190.0(typanion@3.14.0):
-    resolution: {integrity: sha512-QqNYV1jsG0J926LTidsDbHM+xcnxr0zhURftOoBmcpw3cD1B2wvYBdJKEMIV5z9jfgHSApwF+KvNYp0uEVnAYg==}
+  /renovate@37.214.0(typanion@3.14.0):
+    resolution: {integrity: sha512-UOWjeH5t3v1AEkMKsuuUq45uzYMdCW7Hw7tZZ+wg74jhHIri459ZwLQRjZZzpijUTD3eLrz3g1wAZlHQ2FgWhQ==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^8.0.0}
     hasBin: true
     dependencies:
@@ -7244,7 +7244,7 @@ packages:
       auth-header: 1.0.0
       aws4: 1.12.0
       azure-devops-node-api: 12.4.0
-      better-sqlite3: 9.4.0
+      better-sqlite3: 9.4.1
       bunyan: 1.8.15
       cacache: 18.0.2
       cacheable-lookup: 5.0.4
