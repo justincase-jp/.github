@@ -1,7 +1,7 @@
 {
   "name": "dot-github",
   "private": true,
-  "packageManager": "pnpm@8.14.3",
+  "packageManager": "pnpm@8.15.3",
   "description": "justInCase's Renovate configurations",
   "author": "justInCaseTechnologies Inc. <developers@justincase.jp>",
   "repository": {
@@ -20,12 +20,12 @@
   },
   "homepage": "https://github.com/justincase-jp/renovate-config#readme",
   "devDependencies": {
-    "@jict/eslint-plugin": "^1.1.6",
-    "@jict/prettier-config": "^0.0.3",
+    "@jict/eslint-plugin": "^1.1.8",
+    "@jict/prettier-config": "^0.0.4",
     "eslint": "^8.56.0",
-    "lint-staged": "^15.2.1",
-    "prettier": "^3.2.4",
-    "renovate": "^37.170.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "renovate": "^37.210.0",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.3.3"
   },
