@@ -1,9 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "timezone": "Asia/Tokyo",
-  "schedule": [
-    "after 9:00 before 18:00 every weekday",
-  ],
+  "schedule": ["after 9:00 before 18:00 every weekday"],
   "extends": [
     ":dependencyDashboard",
     ":semanticCommits",
