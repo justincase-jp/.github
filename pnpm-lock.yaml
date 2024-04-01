@@ -21,7 +21,7 @@ devDependencies:
     specifier: ^3.2.5
     version: 3.2.5
   renovate:
-    specifier: ^37.273.0
+    specifier: ^37.274.0
     version: 37.278.0(typanion@3.14.0)
   simple-git-hooks:
     specifier: ^2.11.1
