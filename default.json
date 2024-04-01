@@ -1,18 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "timezone": "Asia/Tokyo",
-  "schedule": ["before 3:00 am on the 1st day of the month"],
+  "schedule": [
+    "after 9:00 before 18:00 every weekday",
+  ],
   "extends": [
     ":dependencyDashboard",
     ":semanticCommits",
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
     ":prHourlyLimitNone",
-    ":prConcurrentLimit20",
     "workarounds:all",
     "replacements:all",
     "npm:unpublishSafe"
   ],
+  "prConcurrentLimit": 1,
   "configMigration": true,
   "rebaseWhen": "never",
   "labels": ["dependencies"],
