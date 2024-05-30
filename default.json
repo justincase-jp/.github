@@ -129,6 +129,13 @@
       "matchPackagePatterns": ["^actions/"],
       "groupName": "github-actions official",
       "automerge": true
+    },
+    {
+      "description": "Ignore engine nodejs",
+      "matchPackageNames": ["node"],
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["engines"],
+      "enabled": false
     }
   ],
   "ignoreDeps": ["graphql"]
