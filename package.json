@@ -23,11 +23,11 @@
     "@jict/eslint-plugin": "^1.1.8",
     "@jict/prettier-config": "^0.0.4",
     "eslint": "^8.57.0",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.2.5",
-    "renovate": "^37.280.0",
+    "renovate": "^37.440.7",
     "simple-git-hooks": "^2.11.1",
-    "typescript": "^5.4.4"
+    "typescript": "^5.7.2"
   },
   "prettier": "@jict/prettier-config",
   "simple-git-hooks": {
