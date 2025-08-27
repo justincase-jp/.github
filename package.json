@@ -24,7 +24,7 @@
     "@jict/prettier-config": "^0.0.4",
     "eslint": "^8.57.1",
     "lint-staged": "^15.2.10",
-    "prettier": "^3.4.2",
+    "prettier": "^3.6.2",
     "renovate": "^37.440.7",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.2"
