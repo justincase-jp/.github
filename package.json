@@ -25,9 +25,9 @@
     "eslint": "^8.57.1",
     "lint-staged": "^15.5.2",
     "prettier": "^3.6.2",
-    "renovate": "^42.0.0",
+    "renovate": "^42.99.0",
     "simple-git-hooks": "^2.13.1",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "prettier": "@jict/prettier-config",
   "simple-git-hooks": {
